@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9FB"
+    tools:context="xyz.xaple.notekeeper.MessageListActivity">
+
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/messageInputField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:outcomingDefaultBubbleColor="@color/colorPrimary" />
+
+
+
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/messageInputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:inputButtonBackground="@color/transparent"
+        app:inputButtonDefaultIconColor="#000"
+        app:inputButtonHeight="30dp"
+        app:inputButtonIcon="@drawable/ic_send"
+        app:inputButtonMargin="16dp"
+        app:inputButtonWidth="30dp"
+        app:inputHint="Type your message here.."
+        app:inputHintColor="#BDBDBD"
+        app:inputMaxLines="1"
+        app:inputTextColor="@color/black"
+        app:inputTextSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
